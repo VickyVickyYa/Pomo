@@ -14,7 +14,6 @@
   </head>
   <body>
     <title>Pomodoro</title>
-    <script src="script.js"></script>
 
     <div class="box">
       <h1 class="title">Pomomdoro</h1>
@@ -23,10 +22,11 @@
       <p class="timer" id="timer">25:00</p>
 
       <div class="buttonwrap">
-        <button id="Start">Start</button>
-        <button id="Stop">Stop</button>
-        <button id="Stop">Reset</button>
+        <button id="start" class="button">start</button>
+        <button id="stop" class="button">stop</button>
+        <button id="reset" class="button">reset</button>
       </div>
+      <div class="button"></div>
     </div>
 
     <style>
@@ -53,7 +53,7 @@
           gap: 20px;
           color: white;
           backdrop-filter: blur(10px);
-          width: 600px;
+
           border-radius: 20px;
           padding: 4em 3em;
         }
@@ -66,9 +66,47 @@
           width: 100%;
           background-color: white;
           height: 5px;
-          border-radius: ;
+          border-radius: 1em;
+          border: none;
+        }
+
+        .timer {
+          font-size: 1em;
+          font-weight: 700;
+          font-size: 30px;
+        }
+
+        .buttonwrap {
+          display: flex;
+          gap: 1em;
+        }
+        .button {
+          font-size: 2em;
+          font-weight: 800;
+          letter-spacing: 1px;
+          padding: 0.5em 1.5em;
+          border-radius: 0.53em;
+          border: none;
+          color: white;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+        }
+
+        .button:hover {
+          transform: translate Y(-10px);
+        }
+        #start {
+          background-color: rgb(128, 68, 16);
+        }
+        #stop {
+          background-color: rgb(159, 84, 97);
+        }
+
+        #reset {
+          background-color: lightsalmon;
         }
       }
     </style>
+    <script src="script.js"></script>
   </body>
 </html>
