@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <title>Pomodoro</title>
+    <script src="script.js"></script>
+
+    <div class="box">
+      <h1 class="title">Pomomdoro</h1>
+      <hr />
+
+      <p class="timer" id="timer">25:00</p>
+
+      <div class="buttonwrap">
+        <button id="Start">Start</button>
+        <button id="Stop">Stop</button>
+        <button id="Stop">Reset</button>
+      </div>
+    </div>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Playwrite US Modern", cursive;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url("fall.svg");
+        background-size: cover;
+        background-color: red;
+
+        .box {
+          display: flex;
+          flex-direction: column;
+
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          color: white;
+          backdrop-filter: blur(10px);
+          width: 600px;
+          border-radius: 20px;
+          padding: 4em 3em;
+        }
+
+        .title {
+          font-size: 3em;
+        }
+
+        hr {
+          width: 100%;
+          background-color: white;
+          height: 5px;
+          border-radius: ;
+        }
+      }
+    </style>
+  </body>
+</html>
