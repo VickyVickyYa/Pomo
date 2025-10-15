@@ -30,7 +30,7 @@ const startTimer = () => {
 }
 
 const  stopTimer = () => clearInterval (interval); 
-const resetTimer = () => { clearinterval (  interval); 
+const resetTimer = () => { clearInterval (  interval); 
     timeLeft = 1500; 
 updateTimer ();
 
@@ -40,3 +40,10 @@ updateTimer ();
 start.addEventListener("click", startTimer);
 stop.addEventListener("click", stopTimer);
 reset.addEventListener("click", resetTimer);
+
+
+const music = new Audio('jazz.mp3');
+
+document.addEventListener('click', () => {
+  music.play().catch(error => console.log('Audio play blocked:', error));
+}, { once: true }); 
